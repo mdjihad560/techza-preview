@@ -65,13 +65,13 @@ h2,
 }
 
 @media (max-width: 991px) {
-    h1{
+    h2{
         font-size: 48px;
         line-height: 65px;
     }
 }
 @media (max-width: 767px) {
-    h1{
+    h2{
         font-size: 36px;
         line-height: 40px;
     }
@@ -126,13 +126,14 @@ header.techza-header.sticky-menu{
     max-width: 820px;
     margin: 0 auto;
 }
-.techza-hero-content p{
+.techza-hero-content p, 
+.techza-cta-content p{
     font-size: 20px;
     line-height: 32px;
     letter-spacing: -0.5px;
     color: rgba(255, 255, 255, 0.8);
 }
-.techza-hero-btn {
+.techza-btn-wrap {
     margin-top: 40px;
 }
 .techza-default-btn, 
@@ -227,6 +228,54 @@ header.techza-header.sticky-menu{
     font-size: 24px;
 }
 
+/* cta section */
+
+.techza-cta-section {
+    padding: 120px 0;
+    background-color: #002699;
+}
+
+.techza-cta-content {
+    text-align: center;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+.techza-cta-content h2{
+    color: #fff;
+}
+.techza-cta-content p{
+    margin: 0 40px;
+    margin-bottom: 40px;
+}
+
+/* inner */
+.techza-main-section.inner{
+    padding: 120px 0;
+}
+.techza-inner-bottom{
+    text-align: center;
+}
+.techza-inner-bottom h3{
+    font-size: 50px;
+    color: #002699;
+    margin: 0;
+}
+
+/* footer section */
+.techza-footer-section {
+    background-size: cover;
+    background-position: center;
+    padding: 110px 0;
+}
+.techza-footer-section .techza-hero-content {
+    max-width: 740px;
+}
+.techza-footer-section .techza-hero-content h2{
+    color: #fff;
+}
+.techza-meta.meta-white ul li{
+    color: #fff;
+}
 
 
 
@@ -245,7 +294,16 @@ header.techza-header.sticky-menu{
     .techza-main-section {
         padding: 100px 0 50px;
     }
+    .techza-thumb{
+        height: 600px;
+    }
+    .techza-cta-section, 
+    .techza-main-section.inner, 
+    .techza-footer-section {
+        padding: 100px 0;
+    }
 }
+
 @media (max-width: 767px) {
     .techza-hero-section {
         padding: 140px 0 80px;
@@ -258,5 +316,17 @@ header.techza-header.sticky-menu{
     }
     .techza-main-section {
         padding: 80px 0 30px;
+    }
+    .techza-thumb{
+        height: 400px;
+    }
+    .techza-cta-section, 
+    .techza-main-section.inner, 
+    .techza-footer-section {
+        padding: 80px 0;
+    }
+    .techza-inner-bottom h3{
+        font-size: 36px;
+    
     }
 }
