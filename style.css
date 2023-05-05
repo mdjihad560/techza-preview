@@ -174,7 +174,7 @@ header.techza-header.sticky-menu{
 
 /* main section */
 .techza-main-section {
-    padding: 120px 0 80px;
+    padding: 100px 100px 50px;
 }
 .techza-section-title {
     text-align: center;
@@ -207,19 +207,13 @@ header.techza-header.sticky-menu{
     margin-bottom: 50px;
 }
 .techza-thumb{
-    height: 800px;
-    overflow: hidden;
     margin-bottom: 30px;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
-    -webkit-transition: transform 0.4s, background-position 5s ease-in-out;
-    transition: transform 0.4s, background-position 5s ease-in-out;
-    background-position: 0 0;
+    transition: all 0.4s;
     filter: drop-shadow(0px 4px 80px rgba(0, 0, 0, 0.2));
 
 }
 .techza-thumb:hover{
-    background-position: 0 100%;
+    transform: translateY(-5px);
 }
 
 .techza-data h3{
@@ -252,8 +246,9 @@ header.techza-header.sticky-menu{
 .techza-main-section.inner{
     padding: 120px 0;
 }
-.techza-inner-bottom{
+.techza-inner-bottom {
     text-align: center;
+    padding-bottom: 50px;
 }
 .techza-inner-bottom h3{
     font-size: 50px;
@@ -277,6 +272,27 @@ header.techza-header.sticky-menu{
     color: #fff;
 }
 
+.buy-now-btn {
+    padding: 13px 20px;
+    display: inline-block;
+    background: #82b440;
+    color: #ffffff!important;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: capitalize;
+    position: fixed;
+    right: 10px;
+    bottom: 200px;
+    z-index: 999;
+    -webkit-animation: key1 0.6s ease infinite alternate;
+}
+
+@keyframes key1{
+    0% {transform: translateY(0px);}
+    100% {transform: translateY(-10px);}
+  }
+  
 
 
 /* responsive */
@@ -292,11 +308,9 @@ header.techza-header.sticky-menu{
     }
 
     .techza-main-section {
-        padding: 100px 0 50px;
+        padding: 80px 20px 30px;
     }
-    .techza-thumb{
-        height: 600px;
-    }
+
     .techza-cta-section, 
     .techza-main-section.inner, 
     .techza-footer-section {
@@ -314,12 +328,7 @@ header.techza-header.sticky-menu{
     .techza-section-title {
         margin: 0 auto 40px;
     }
-    .techza-main-section {
-        padding: 80px 0 30px;
-    }
-    .techza-thumb{
-        height: 400px;
-    }
+
     .techza-cta-section, 
     .techza-main-section.inner, 
     .techza-footer-section {

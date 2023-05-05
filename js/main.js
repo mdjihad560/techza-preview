@@ -32,6 +32,16 @@ $(window).on('scroll', function(){
 });
 
 
+var popup_youtube = $('.video-popup');
+  if (popup_youtube.is_exist()){
+      popup_youtube.magnificPopup({
+      type: 'iframe',
+      mainClass: 'mfp-fade'
+  });
+
+}
+
+
 
 });/*End document ready*/
 
